@@ -42,7 +42,7 @@ $carrouselcontainergrandechico=document.querySelector(".carrousel-container-gran
 $pletra=document.querySelector(".p-letra"),
 $pua=document.querySelector(".pua"),
 $btnanimacion=document.querySelector(".btn-animacion"),
-$iframe=document.querySelector("iframe");
+$iframe=document.querySelector(".fuente-audio iframe");
 
   
 
