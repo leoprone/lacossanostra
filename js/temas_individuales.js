@@ -84,9 +84,13 @@ document.addEventListener("mouseover", (e)=>{
     }
 });
 
-
 $iframe.addEventListener("touchstart", (e)=>{
+    
     movimientosTocadiscos();
+    $iframe.ontouchstart=function(){
+        movimientosTocadiscos();
+    }
+
 }, false);
 
 ////////////////////// MOVIMIENTO Y AUDIO TOCADISCOS ///////////////////////////
