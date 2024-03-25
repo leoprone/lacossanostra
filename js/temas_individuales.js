@@ -44,7 +44,7 @@ $pua=document.querySelector(".pua"),
 $btnanimacion=document.querySelector(".btn-animacion"),
 $iframe=document.querySelector(".fuente-audio iframe");
 
-  
+  /* 
 
 function pausar(audio, boton) { 
 
@@ -60,7 +60,7 @@ function pausar(audio, boton) {
 } 
 
   
-  
+   */
   
   
 function movimientosTocadiscos(){
@@ -72,10 +72,22 @@ function movimientosTocadiscos(){
     }
 
    
-  
+/*   
 $iframe.onmouseover=function(){
     movimientosTocadiscos();
 }
+ */
+
+document.addEventListener("mouseover", (e)=>{
+    if (e.target.matches(".fuente-audio iframe")) {
+        movimientosTocadiscos();
+    }
+});
+
+
+$iframe.addEventListener("touchstart", (e)=>{
+    movimientosTocadiscos();
+}, false);
 
 ////////////////////// MOVIMIENTO Y AUDIO TOCADISCOS ///////////////////////////
 
